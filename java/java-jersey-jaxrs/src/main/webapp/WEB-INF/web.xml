@@ -27,7 +27,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>jersey</servlet-name>
-    <url-pattern>BASE_PATH/*</url-pattern>
+    <url-pattern>/v2/*</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -43,7 +43,7 @@
     </init-param>
     <init-param>
       <param-name>swagger.api.basepath</param-name>
-      <param-value>FULL_SWAGGER_PATH</param-value>
+      <param-value>http://localhost:80/v2</param-value>
     </init-param>
     <load-on-startup>2</load-on-startup>
   </servlet>
